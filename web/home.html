@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <title>TODO supply a title</title>
+        <meta charset="UTF-8">
+        <link href="../css/matfont.woff2.css" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+        
+        <link rel="stylesheet" type="text/css" href="sigma.css">
+	<meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script> 
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        <link href="https://fonts.googleapis.com/css2?family=Sarala:wght@400;700&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"> 
+        <style>
+            html{
+		scroll-behavior: smooth;
+            }
+        </style>
+        
+           
+    </head>
+    <body style="background:url('image/wel12.jpg');background-attachment: fixed;background-size: cover;border-color: transparent">
+        
+        <div class="container-fluid">
+            <div id="popup">
+		<div id="popdiv" class="text-center"><br>
+			<h1 class="text-center text-warning">Notification</h1>
+                        <p class="text-center text-white" style="font-size: 30px;color: darksalmon;font-family: serif">Click on button for Start your banking here!!</p><br>
+                        <button class="btn waves-effect waves-light red" id="sub">Start Your Banking
+                            <i class="material-icons right">send</i>
+                        </button>
+                        
+			
+		</div>
+            </div>
+            <div class="nav">
+                
+                <nav class="navbar navbar-expand-md bg-transparent navbar-dark">
+                    <div class="container-fluid" style="background-color:#00000009">
+                        <a href="#" class="navbar-brand text-warning" >Banking World</a>
+                        <button class="navbar-toggler" data-toggle="collapse" data-target="#touch">
+                            <span class="navbar-toggler-icon"></span></button>
+                        <div class="collapse navbar-collapse" id="touch">
+                            <ul class="navbar-nav text-center ml-auto" id="padd">
+                                <li class="nav-item" >
+                                    <a href="#" class="nav-link text-white">Home</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a href="AccountOpeningForm.jsp" class="nav-link text-white">Open Account</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a href="customerz.jsp" class="nav-link text-white">View Customers</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a href="transfer.jsp" class="nav-link text-white">Transfer Money</a>
+                                </li>
+
+                                <li class="nav-item">
+                                    <a href="transaction.jsp" class="nav-link text-white">Transactions</a>
+                                </li>
+                            </ul>
+                        </div>
+                </nav>
+                
+            </div>   
+                    <div class="row">
+                        <div class="col m6">
+                            <div class="container-fluids" id="edit"><br><br>
+                        <p style="font-size: 70px; margin-left: 10px;color: white;margin-top:150px;font-family:Brush Script MT, Brush Script Std, cursive">Basic Banking</p>
+                        <p style="font-size: 70px; margin-left: 10px;color: white;font-family:Brush Script MT, Brush Script Std, cursive">System</p><br>
+                        <p style="font-size: 40px; margin-left: 10px;color: whitesmoke;font-family: cursive;">The Bank that begins with U.  </p>
+                        
+                    </div>
+                        </div>
+                        <div class="col m6">
+                            <div class="col m6"></div>
+                            <div class="col m6" style="margin-top:150px">
+                                <a class="waves-effect waves-light btn-large" href="AccountOpeningForm.jsp" id="btns">: Open new Account</a><br><br>
+                                <a class="waves-effect waves-light btn-large" href="customers.jsp" id="btns">: View All Customers</a><br><br>
+                                <a class="waves-effect waves-light btn-large" id="btns">: Transfer Money    </a>
+
+                            </div>
+                        </div>
+                    </div>
+        </div>
+          
+            <script>
+	$(document).ready(function(){
+        (setTimeout)(function(){
+           $('#popup').css('display','block');},3000);
+	 });
+	 $('#sub').click(function(){
+	 	$('#popup').css('display','none')
+	 });
+	  $('#subb').click(function(){
+	 	$('#popup').css('display','none')
+	 });
+
+</script>
+           
+    </body>
+</html>
